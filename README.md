@@ -2,8 +2,8 @@
 
 https://codinginfinite.com/multi-threaded-tcp-server-core-example-csharp/
 
-Använd appsettings.Development.json med följande:
-```
+AnvÃ¤nd appsettings.Development.json med fÃ¶ljande:
+```json
 {
   "ConnectionStrings": {
     "DefaultConnection": "Foo"
