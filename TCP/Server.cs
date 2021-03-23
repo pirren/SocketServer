@@ -4,11 +4,12 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 
-namespace SocketServer
+namespace SocketServer.TCP
 {
     public class Server
     {
         TcpListener server = null;
+
         public Server(string ip, int port)
         {
             IPAddress localAddr = IPAddress.Parse(ip);
@@ -16,6 +17,7 @@ namespace SocketServer
             server.Start();
             StartListener();
         }
+        
         public void StartListener()
         {
             try
